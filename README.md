@@ -37,32 +37,32 @@ Após a autenticação o usuário é redirecionado à página home que exibe a e
 
 	-Consultar o catálogo de discos de forma paginada, filtrando por gênero e ordenando de forma crescente pelo nome do disco
 
-http://localhost:8084/musiccacheAPI/album?page=1
-http://localhost:8084/musiccacheAPI/album?genre=POP
+http://localhost:8885/album?page=1
+http://localhost:8885/album?genre=POP
 
 
 	-Consultar o disco pelo seu identificador
 
-http://localhost:8084/musiccacheAPI/album/{id}
+http://localhost:8885/album/{id}
 
 
 	-Consultar todas as vendas efetuadas de forma paginada, filtrando pelo range
 de datas (inicial e final) da venda e ordenando de forma decrescente pela
 data da venda
 
-http://localhost:8084/musiccacheAPI/venda
-http://localhost:8084/musiccacheAPI/vendas?sort=dtvenda
+http://localhost:8885/venda
+http://localhost:8885/vendas?page=0&from=2019-05-10&to=2019-05-10
 
 
 	-Consultar uma venda pelo seu identificador
 	
-http://localhost:8084/musiccacheAPI/venda/{id}
+http://localhost:8885/venda/{id}
 
 	-Registrar uma nova venda de discos calculando o valor total de cashback
 considerando a tabela.
 
 TIPO:POST
-URL: http://localhost:8084/musiccacheAPI/venda
+URL: http://localhost:8885/venda
 Nota: A requisição deve ser autenticada (Basic Auth)
 Exemplo json envio:
 
