@@ -51,7 +51,7 @@ de datas (inicial e final) da venda e ordenando de forma decrescente pela
 data da venda
 
 http://localhost:8885/venda
-http://localhost:8885/vendas?page=0&from=2019-05-10&to=2019-05-10
+http://localhost:8885/venda?page=0&from=2019-05-01&to=2019-05-20
 
 
 	-Consultar uma venda pelo seu identificador
