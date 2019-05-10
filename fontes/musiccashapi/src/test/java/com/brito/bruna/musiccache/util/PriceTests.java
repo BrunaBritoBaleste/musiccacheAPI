@@ -5,8 +5,6 @@
  */
 package com.brito.bruna.musiccache.util;
 
-import com.brito.bruna.musiccache.entity.VigentCashbackTable;
-import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,11 +17,12 @@ import org.springframework.test.context.junit4.SpringRunner;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class LoadVigentCashbackTableTest {
+public class PriceTests {
     
-     @Test
-	public void loadCashbackTableTest() throws Exception {            
-            List<VigentCashbackTable> cashback = LoadVigentCashbackTable.loadCashbackTable();
-            assertThat(cashback).isNotNull();
+        @Test
+	public void generatePriceTest() throws Exception {            
+            Double preco = Price.generatePrice();
+            assertThat(preco).isNotNull();
+            assertThat(preco).isNotNegative();
 	}
 }
