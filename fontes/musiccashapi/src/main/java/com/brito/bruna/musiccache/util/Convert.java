@@ -61,6 +61,10 @@ public  class Convert {
     
     public static Album convertAlbumSpotifyToAlbum(AlbumSpotify albumSpotify){
         
+        if(albumSpotify==null){
+            return null;
+        }
+        
         Album album = new Album();
         album.setGenre(albumSpotify.getGenre().toUpperCase());
         album.setName(albumSpotify.getName());
